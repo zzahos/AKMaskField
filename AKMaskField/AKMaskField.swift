@@ -238,6 +238,7 @@ open class AKMaskField: UITextField, UITextFieldDelegate  {
         } else {
             super.text = maskText
         }
+        self.sendActions(for: .valueChanged)
         
         moveCarret()
     }
